@@ -78,7 +78,7 @@ body {
 
 /* 图标向上浮动 */
 .navigation ul li.active a .icon {
-    transform: translateY(-30px);
+    transform: translateY(-30px) !important;
 }
 
 .navigation ul li:hover a .icon {
@@ -86,7 +86,11 @@ body {
 }
 
 /* 底部标题向上浮动 */
-.navigation ul li.active a .text,
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px)!important;
+}
+
 .navigation ul li:hover a .text {
     opacity: 1;
     transform: translateY(10px);
